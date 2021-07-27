@@ -2,6 +2,8 @@
 
 This is the challenges from the course <a href="https://www.udemy.com/course/learn-how-to-code/">Learn How To Code: Google's Go (golang) Programming Language</a> . 🧑‍🏫
 
+> Run every program in an isolated environment because everything has `package main` same
+
 ## Resources 📚
 
 - <a href="https://www.udemy.com/course/learn-how-to-code/">Udemy course</a> . 🧑‍🏫
