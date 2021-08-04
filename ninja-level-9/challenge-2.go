@@ -1,28 +1,26 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
-type circle struct {
-	radius float64
+type person struct {
+	name string
 }
 
-type shape interface {
-	area() float64
+type human interface {
+	speak()
 }
 
-func (c *circle) area() float64 {
-	return math.Pi * c.radius * c.radius
+func (p *person) speak() {
+	fmt.Println("Hello, my name is", p.name)
 }
 
-func info(s shape) {
-	fmt.Println("area", s.area())
+func saySomething(h human) {
+	h.speak()
 }
 
 func main() {
-	c := circle{5}
-	info(&c) // use & fro pointer
-	fmt.Println(c.area())
+	p := person{ name: "golang" }
+
+	p.speak()
+	saySomething(&p)
 }
